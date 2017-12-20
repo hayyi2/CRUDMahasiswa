@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head >
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Data Mahasiswa &middot; SIAM</title>
+
+	<link href="assets/css/bootstrap.css" rel="stylesheet"/>
+	<link href="assets/css/font-awesome.css" rel="stylesheet"/>
+	<link href="assets/css/style.css" rel="stylesheet"/>
+
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="SIAM" src="assets/img/logo.png">
+				</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div page id="page-data">
+			<h3>Data Mahasiswa</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Nama/NIM</th>
+						<th>Aksi</th>
+					</tr>
+				</thead>
+				<tbody body-data="">
+				</tbody>
+				<tbody class="master">
+					<tr>
+						<td numbering="0">No</td>
+						<td id="nama-nim"><a show_data="">Nama/NIM</a></td>
+						<td width="1" class="text-nowrap">
+							<button class="btn btn-success btn-xs" edit_data=""><i class="fa fa-fw fa-pencil"></i></button>
+							<button class="btn btn-danger btn-xs" delete_data=""><i class="fa fa-fw fa-trash"></i></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="btn btn-primary" add_data="">Tambah Data</button>
+		</div>
+		<div page id="page-single">
+			<h3>Mahasiswa</h3>
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>Nama</td>
+						<th item="nama"></th>
+					</tr>
+					<tr>
+						<td>NIM</td>
+						<th item="nim"></th>
+					</tr>
+					<tr>
+						<td>Tangal Lahir</td>
+						<th item="tanggal_lahir"></th>
+					</tr>
+					<tr>
+						<td>Jenjang/Fakultas</td>
+						<th item="jenjang"></th>
+					</tr>
+					<tr>
+						<td>Jurusan</td>
+						<th item="jurusan"></th>
+					</tr>
+					<tr>
+						<td>Program Studi</td>
+						<th item="prodi"></th>
+					</tr>
+					<tr>
+						<td>Seleksi</td>
+						<th item="seleksi"></th>
+					</tr>
+					<tr>
+						<td>Nomor Ujian</td>
+						<th item="nomor"></th>
+					</tr>
+				</tbody>
+			</table>
+			<button class="btn btn-primary" show_all_data="">Kembali</button>
+		</div>
+		<div page id="page-input">
+			<h3 title_mode>Input Mahasiswa</h3>
+			<form input>
+				<div class="form-group">
+					<label>Nama</label>
+					<input required="" name="nama" type="text" class="form-control" placeholder="Nama">
+				</div>
+				<div class="form-group">
+					<label>NIM</label>
+					<input required="" name="nim" type="text" class="form-control" placeholder="NIM">
+				</div>
+				<div class="form-group">
+					<label>Tanggal Lahir</label>
+					<input required="" name="tanggal_lahir" type="text" class="form-control" placeholder="Tanggal Lahir">
+				</div>
+				<div class="form-group">
+					<label>Jenjang/Fakultas</label>
+					<input required="" name="jenjang" type="text" class="form-control" placeholder="Jenjang/Fakultas">
+				</div>
+				<div class="form-group">
+					<label>Jurusan</label>
+					<input required="" name="jurusan" type="text" class="form-control" placeholder="Jurusan">
+				</div>
+				<div class="form-group">
+					<label>Prodi</label>
+					<input required="" name="prodi" type="text" class="form-control" placeholder="Prodi">
+				</div>
+				<div class="form-group">
+					<label>Seleksi</label>
+					<input required="" name="seleksi" type="text" class="form-control" placeholder="Seleksi">
+				</div>
+				<div class="form-group">
+					<label>Nomor Ujian</label>
+					<input required="" name="nomor" type="text" class="form-control" placeholder="Nomor Ujian">
+				</div>
+				<button type="submit" class="btn btn-primary">Simpan Data</button>
+				<button type="button" class="btn btn-default" show_all_data="">Kembali</button>
+			</form>
+		</div>
+	</div>
+	<p></p>
+</body>
+</html>
